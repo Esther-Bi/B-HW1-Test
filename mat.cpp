@@ -6,7 +6,7 @@ using namespace std;
 namespace ariel{
     string mat(int col, int row, char c1, char c2){
         // missimg parameter
-        if (!col || !row || !c1 || !c2 || c1=='\0' || c2=='\0'){
+        if (col==0 || row==0 || c1=='\0' || c2=='\0'){
            throw std::domain_error( "missimg parameter!" );
         }
         // bad input
